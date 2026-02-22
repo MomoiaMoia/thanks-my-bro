@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<TriggernometryExport PluginVersion="2.0.4.0">
+  <ExportedFolder Id="cad400d4-1b5a-4b71-b239-f7d102ebee18" Enabled="true" Name="谢谢你，我的好bro">
+    <Triggers>
+      <Trigger Enabled="true" Id="6e7d12fc-3e69-4a6e-9582-b1921bacd01b" Name="感谢治疗" RegularExpression="^.{14}\sActionEffect\s+15:[0-9A-F]+:(?&lt;src&gt;[^:]*):[0-9A-F]+:(?&lt;ability&gt;[^:]+):[0-9A-F]+:(?&lt;tgt&gt;[^:]*):4:">
+        <Actions>
+          <Action OrderNumber="1" ActionType="Trigger" TriggerId="7393b5fd-b7fe-40ba-a43c-ef7298c71502" TriggerForce="regexp" />
+          <Action OrderNumber="2" ActionType="NamedCallback" NamedCallbackName="command" NamedCallbackParam="/p 感谢${src}妈咪的${ability}。">
+            <Condition Enabled="true" Grouping="And">
+              <ConditionSingle Enabled="true" ExpressionL="${tgt}" ExpressionTypeL="String" ExpressionR="${var:me}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+              <ConditionSingle Enabled="true" ExpressionL="${src}" ExpressionTypeL="String" ExpressionR="${var:me}" ExpressionTypeR="String" ConditionType="StringNotEqualNocase" />
+            </Condition>
+          </Action>
+        </Actions>
+      </Trigger>
+      <Trigger Enabled="true" Id="7393b5fd-b7fe-40ba-a43c-ef7298c71502" Name="设置角色ID">
+        <Actions>
+          <Action OrderNumber="1" ActionType="Variable" VariableOp="SetString" VariableName="me" VariableExpression="把你的ID写到这里" />
+        </Actions>
+      </Trigger>
+      <Trigger Enabled="true" Id="85c99913-a598-472e-9dd8-c0dff18c4848" Name="感谢BUFF" RegularExpression="^.{14}\sActionEffect\s+15:[0-9A-F]+:(?&lt;src&gt;[^:]*):[0-9A-F]+:(?&lt;ability&gt;[^:]+):[0-9A-F]+:(?&lt;tgt&gt;[^:]*):[0-9A-F]*E:">
+        <Actions>
+          <Action OrderNumber="1" Enabled="False" ActionType="NamedCallback" NamedCallbackName="command" NamedCallbackParam="/e 已触发。" />
+          <Action OrderNumber="2" ActionType="Trigger" TriggerId="7393b5fd-b7fe-40ba-a43c-ef7298c71502" TriggerForce="regexp" />
+          <Action OrderNumber="3" ActionType="NamedCallback" NamedCallbackName="command" NamedCallbackParam="/p 感谢${src}大人的${ability}。">
+            <Condition Enabled="true" Grouping="And">
+              <ConditionSingle Enabled="true" ExpressionL="${tgt}" ExpressionTypeL="String" ExpressionR="${var:me}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+              <ConditionSingle Enabled="true" ExpressionL="${src}" ExpressionTypeL="String" ExpressionR="${var:me}" ExpressionTypeR="String" ConditionType="StringNotEqualNocase" />
+            </Condition>
+          </Action>
+        </Actions>
+      </Trigger>
+    </Triggers>
+  </ExportedFolder>
+</TriggernometryExport>
