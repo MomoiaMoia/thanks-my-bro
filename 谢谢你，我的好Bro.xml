@@ -13,6 +13,7 @@
                 <ConditionSingle Enabled="true" ExpressionL="${src}" ExpressionTypeL="String" ExpressionR="红宝石兽" ExpressionTypeR="String" ConditionType="StringNotEqualNocase" />
                 <ConditionSingle Enabled="true" ExpressionL="${src}" ExpressionTypeL="String" ExpressionR="绿宝石兽" ExpressionTypeR="String" ConditionType="StringNotEqualNocase" />
                 <ConditionSingle Enabled="true" ExpressionL="${src}" ExpressionTypeL="String" ExpressionR="蓝宝石兽" ExpressionTypeR="String" ConditionType="StringNotEqualNocase" />
+                <ConditionSingle Enabled="true" ExpressionL="${src}" ExpressionTypeL="String" ExpressionR="黄宝石兽" ExpressionTypeR="String" ConditionType="StringNotEqualNocase" />
                 <ConditionSingle Enabled="true" ExpressionL="${src}" ExpressionTypeL="String" ExpressionR="炽天使" ExpressionTypeR="String" ConditionType="StringNotEqualNocase" />
                 <ConditionSingle Enabled="true" ExpressionL="${src}" ExpressionTypeL="String" ExpressionR="朝日小仙女" ExpressionTypeR="String" ConditionType="StringNotEqualNocase" />
                 <ConditionSingle Enabled="true" ExpressionL="${src}" ExpressionTypeL="String" ExpressionR="夕月小仙女" ExpressionTypeR="String" ConditionType="StringNotEqualNocase" />
@@ -39,6 +40,7 @@
                 <ConditionSingle Enabled="true" ExpressionL="${src}" ExpressionTypeL="String" ExpressionR="红宝石兽" ExpressionTypeR="String" ConditionType="StringNotEqualNocase" />
                 <ConditionSingle Enabled="true" ExpressionL="${src}" ExpressionTypeL="String" ExpressionR="绿宝石兽" ExpressionTypeR="String" ConditionType="StringNotEqualNocase" />
                 <ConditionSingle Enabled="true" ExpressionL="${src}" ExpressionTypeL="String" ExpressionR="蓝宝石兽" ExpressionTypeR="String" ConditionType="StringNotEqualNocase" />
+                <ConditionSingle Enabled="true" ExpressionL="${src}" ExpressionTypeL="String" ExpressionR="黄宝石兽" ExpressionTypeR="String" ConditionType="StringNotEqualNocase" />
                 <ConditionSingle Enabled="true" ExpressionL="${src}" ExpressionTypeL="String" ExpressionR="炽天使" ExpressionTypeR="String" ConditionType="StringNotEqualNocase" />
                 <ConditionSingle Enabled="true" ExpressionL="${src}" ExpressionTypeL="String" ExpressionR="朝日小仙女" ExpressionTypeR="String" ConditionType="StringNotEqualNocase" />
                 <ConditionSingle Enabled="true" ExpressionL="${src}" ExpressionTypeL="String" ExpressionR="夕月小仙女" ExpressionTypeR="String" ConditionType="StringNotEqualNocase" />
